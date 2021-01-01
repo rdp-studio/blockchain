@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>RDPStudio BlockChain Explorer</title>
+    </head>
+    <body>
+        <h1 align="center">BlockChain Explorer</h1>
+          <ul>
+            {% for text in txt %}
+            <li>Index:{{ text["index"] }}</li>
+            <li>timestamp:{{ text["timestamp"] }}</li>
+            <li>Data:{{ text["data"] }}</li>
+            <li>hash:{{ text["hash"] }}</li>
+            <li>previous_hash:{{ text["previous_hash"] }}</li>
+            <br/>
+            {% endfor %}
+          </ul>
+    </body>
+</html>
